@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Slabo+27px');
 :root {
-    --plava: #3496d8;
+    --plava: #3496d8; /*rgb(52, 150, 216)*/
     --tamnoSiva: #8f8f8f;
     --bela: #fff;
     --crna: #111;
@@ -168,7 +168,8 @@ introduction
 }
 #introduction article .field p {
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
 }
 #introduction article .field h4 {
     font-size: 1.5rem;
@@ -183,5 +184,52 @@ introduction
 #introduction article .field i:hover {
     color: var(--tamnoSiva);
 }
-
+/********************
+ourWorks
+********************/
+#ourWorks {
+    padding: var(--padding);
+    text-align: center;
+}
+#ourWorks p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding-bottom: 45px;
+}
+#ourWorks img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+#ourWorks article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#ourWorks article div {
+    flex: 0 0 31%;
+    height: 600px;
+    margin-bottom: 65px;
+    position: relative;
+}
+#ourWorks article div::after {
+    display: block;
+    content: "";
+    height: 10px;
+    background-color: var(--plava);
+    width: 100% ;
+}
+#ourWorks article div span {
+    position: absolute;
+    background-color: rgba(52, 150, 216,.5);
+    font-weight: 700;
+    color: var(--bela);
+    padding: 10px 20px;
+    letter-spacing: 0.5px;
+    top: 0;
+    right: 0;
+    font-family: var(--fontHeadings);
+}
 
