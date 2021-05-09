@@ -325,6 +325,9 @@ responsive
     .container {
         width: 94%;
     }
+    h2 {
+        font-size: 2.4em;
+    }
     header ul li {
         margin-left: 20px;
     }
@@ -387,6 +390,14 @@ responsive
     header .hgroup h5 {
         font-size: .9rem;
     }
+    #introduction button {
+        padding: 15px 60px;
+    }
+    #introduction .text p,
+    #ourWorks p,
+    #contactUs p {
+        font-size: 1rem;
+    }
     #introduction article:first-child {
         margin-bottom: 40px;
     }
@@ -402,6 +413,10 @@ responsive
     }
     #ourWorks article div {
         flex: 0 0 100%;
+        margin-bottom: 35px;
+    }
+    #contactUs h2 {
+        font-size: 3rem;
     }
     #contactUs .contact div {
         padding: 0 0 30px 10px;
@@ -409,6 +424,9 @@ responsive
     }
     #contactUs .contact div:last-child {
         flex: 0 0 100%;
+    }
+    #contactUs .contact span {
+        font-size: 1.5em;
     }
     #contactUs .contact input {
         display: block;
