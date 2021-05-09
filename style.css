@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Slabo+27px');
+:root {
+    --plava: #3496d8;
+    --tamnoSiva: #8f8f8f;
+    --bela: #fff;
+    --crna: #111;
+    --padding: 50px 0;
+    --fontFamily: 'Slabo 27px', serif;
+    --fontHeadings: 'Raleway', sans-serif;
+    --fontSize: 16px;
+    --transition: .35s ease-in-out;
+    --textShadow: 0 0 3px var(--tamnoSiva);
+}
+/********************
+basic styles
+********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fontHeadings);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+/********************
+header
+********************/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: var(--bela);
+}
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px 0;
+}
+header .logo {
+    color: var(--bela);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: var(--textShadow);
+    line-height: 1.2;
+}
+header .logo:hover {
+    color: var(--plava);
+}
+header ul {
+    display: flex;
+}
+header ul li {
+    margin-left: 30px;
+}
+header ul li a {
+    color: var(--bela);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.0rem;
+    text-shadow: var(--textShadow);
+    padding: 15px;
+    border-radius: 30px;
+}
+header ul li a:hover {
+    background-color: var(--bela);
+    color: var(--plava);
+}
+header .hgroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+header .hgroup h1 {
+    font-size: 5.2rem;
+    text-shadow: 0 0 5px var(--crna);
+    line-height: 1.4;
+}
+header .hgroup h4 {
+    font-size: 2rem;
+    text-shadow: var(--textShadow);
+}
+header .hgroup h5 {
+    font-size: 1.2rem;
+    text-shadow: 0 0 2px var(--crna);
+    padding-top: 15px;
+    letter-spacing: 1px;
+    text-shadow: var(--textShadow);
+}
+
+
