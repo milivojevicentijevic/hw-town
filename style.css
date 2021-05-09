@@ -201,6 +201,10 @@ ourWorks
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: var(--transition);
+}
+#ourWorks img:hover {
+    opacity: .85;
 }
 #ourWorks article {
     display: flex;
@@ -232,4 +236,83 @@ ourWorks
     right: 0;
     font-family: var(--fontHeadings);
 }
+/********************
+contactUs
+********************/
+#contactUs {
+    background-image: url(img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: var(--padding);
+    color: var(--bela);
+}
+#contactUs h2 {
+    color: var(--bela);
+    font-size: 4rem;
+    display: inline-block;
+    border-bottom: 10px solid var(--bela);
+    line-height: 1.2;
+}
+#contactUs hr {
+    position: relative;
+    border: none;
+    height: 1px;
+    display: block;
+    width: 100%;
+    background-color: var(--bela);
+    top: -10px;
+}
+#contactUs p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding-top: 25px;
+}
+#contactUs .contact {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#contactUs .contact div {
+    padding: 0 0 80px 50px;
+    flex: 0 0 50%;
+}
+#contactUs .contact i,
+#contactUs .contact span {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+#contactUs .contact i:hover {
+    color: var(--plava);
+}
+#contactUs .contact input {
+    font-size: 1.1rem;
+    padding: 10px;
+    font-family: var(--fontFamily);
+    outline: none;
+    width: 230px;
+    bottom: 1px solid var(--bela);
+    line-height: 1.1;
+}
+#contactUs input::placeholder {
+    color: var(--tamnoSiva);
+}
+#contactUs .contact button {
+    position: relative;
+    left: -3px;
+    color: var(--bela);
+    background-color: var(--plava);
+    border: 2px solid var(--plava);
+    font-size: 1rem;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    transition: var(--transition);
+    cursor: pointer;
+}
+#contactUs .contact button:hover {
+    background-color: var(--bela);
+    color: var(--plava);
+}
+
 
