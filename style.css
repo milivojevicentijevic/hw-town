@@ -19,10 +19,14 @@ basic styles
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
     line-height: 1.6;
+    color: var(--tamnoSiva);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--fontHeadings);
@@ -33,6 +37,16 @@ ul {
 a {
     text-decoration: none;
     transition: var(--transition);
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+h2 {
+    color: var(--plava);
+    font-size: 3.2rem;
+    letter-spacing: -1px;
+    padding-bottom: 10px;
 }
 /********************
 header
@@ -105,6 +119,69 @@ header .hgroup h5 {
     padding-top: 15px;
     letter-spacing: 1px;
     text-shadow: var(--textShadow);
+}
+/********************
+introduction
+********************/
+#introduction {
+    padding: var(--padding);
+}
+#introduction img {
+    width: 100%;
+}
+#introduction article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#introduction article:first-child {
+    margin-bottom: 80px;
+}
+#introduction article .img {
+    flex: 0 0 48.5%;
+}
+#introduction article .text {
+    flex: 0 0 48.5%;
+}
+#introduction article .field {
+    flex: 0 0 30%;
+    text-align: center;
+}
+#introduction .text p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+#introduction button {
+    font-size: 1.1rem;
+    background-color: var(--plava);
+    color: var(--bela);
+    padding: 15px 80px;
+    border-radius: 30px;
+    border: 1px solid var(--plava);
+    transition: var(--transition);
+    cursor: pointer;
+}
+#introduction button:hover {
+    background-color: var(--bela);
+    color: var(--plava);
+}
+#introduction article .field p {
+    text-align: left;
+    font-size: 0.9rem;
+}
+#introduction article .field h4 {
+    font-size: 1.5rem;
+    color: var(--plava);
+    padding: 30px 0 20px;
+}
+#introduction article .field i {
+    font-size: 4rem;
+    color: var(--plava);
+    transition: var(--transition);
+}
+#introduction article .field i:hover {
+    color: var(--tamnoSiva);
 }
 
 
